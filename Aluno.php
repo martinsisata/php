@@ -17,7 +17,12 @@ class Aluno extends Pessoa {
         $this->mat = $mat;
     }
 
-
+    public function imprimir(){
+        echo "<h4>Dados do aluno</h4>";
+        echo "Matricula: ".$this->getMat();
+        echo "<br/>Nome: ".$this->getNome();
+        echo "<br/>Idade: ".$this->getIdade();
+    }
 
 }
 ?>
